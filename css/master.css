@@ -1,0 +1,77 @@
+body {
+  background-color: #0a1428;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 36pt;
+}
+
+p {
+  color: white;
+}
+
+#prompt {
+  filter: invert(1);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  height: 250pt;
+}
+
+.inputbox {
+  display: block;
+  margin: auto;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12pt;
+  width: 500px;
+  color: white;
+  background: #142952;
+  border: 0.5px solid white;
+  padding: 4px;
+  outline: none;
+}
+
+.autocomplete-items {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border: 0.5px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  width: 508px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  /*position the autocomplete items to be the same width as the container:*/
+  margin: auto;
+}
+.autocomplete-items div {
+  padding: 4px;
+  cursor: pointer;
+  background-color: #142952;
+  border: 0.1px solid #d4d4d4;
+}
+.autocomplete-items div:hover {
+  /*when hovering an item:*/
+  background-color: #2952a3;
+}
+.autocomplete-active {
+  /*when navigating through the items using the arrow keys:*/
+  background-color: #2952a3 !important;
+  color: white;
+}
+
+.message {
+  color: white;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 10pt;
+  padding: 6px;
+}
+
+.btn {
+  display: none;
+}
