@@ -17,8 +17,8 @@ const lat = lats[ind];
 function proximity(guess) {
   guessInd = lcNames.indexOf(guess.toLowerCase());
   distToGuess = Math.sqrt((lat-lats[guessInd])**2 + (long-longs[guessInd])**2);
-  // return Math.floor(100*((-distToGuess)/300 + 1));
-  return Math.floor(100*Math.exp(-0.015*distToGuess));
+  return Math.floor(100*((-distToGuess)/300 + 1));
+  // return Math.floor(100*Math.exp(-0.015*distToGuess));
 };
 
 document.getElementById('prompt').src = "https://raw.githubusercontent.com/djaiss/mapsicon/33ba28808f8d32b5bae0ffada9cadd07073852e1/all/".concat(code.toLowerCase(), "/vector.svg");
@@ -194,7 +194,7 @@ function reveal() {
       receiver.focus();
     }
   } else {
-    msg.innerHTML = "You suck LMAO the country was ".concat(name, ".");
+    msg.innerHTML = "You suck LMAO the country was <b>".concat(name, "</b>.");
     msg.scrollIntoView();
   }
 };
